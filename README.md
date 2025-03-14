@@ -1,40 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🍔 Burguer Heaven - Site da Hamburgueria Orgânica
 
-## Getting Started
+Este é um projeto desenvolvido em **Next.js** para um site de uma hamburgueria orgânica. O layout responsivo foi criado utilizando **Tailwind CSS**.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## 📂 Estrutura do Projeto
+
+```
+📦 projeto
+├── 📂 components
+│   ├── Layout.tsx
+├── 📂 pages
+│   ├── index.tsx
+├── 📂 public
+│   ├── images/
+│   │   ├── Burgers.png
+│   │   ├── fritas.png
+│   │   ├── 3burguers.png
+│   │   ├── balcao.png
+├── 📂 styles
+│   ├── globals.css
+├── 📝 README.md
+├── 📄 package.json
+├── 📄 tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Layout da Página Inicial
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+A página inicial (**index.tsx**) contém:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Título principal**: "A Hamburgueria Orgânica Favorita de São Paulo".
+- **Imagem do hambúrguer**.
+- **Seção destacada** com um subtítulo e um botão.
+- **Imagens adicionais** de fritas e hambúrgueres.
+- **Texto animado** de destaque.
+- **Chamada para ação**: "Encomendar online ou venha visitar-nos hoje".
+- **Rodapé** com links para páginas relevantes.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🏗️ Componentes Principais
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📌 **Layout.tsx**
 
-## Learn More
+O **Layout** é um componente reutilizável que estrutura a página:
 
-To learn more about Next.js, take a look at the following resources:
+- **Navegação com links**: "Sobre", "Menu" e "Encomendar Online".
+- **Normalização dos links** para URLs amigáveis.
+- **Conteúdo principal** utilizando `children`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### 📌 **index.tsx**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Página inicial do site que utiliza o **Layout.tsx** para organizar os elementos visuais.
 
-## Deploy on Vercel
+## 🛠️ Como Rodar o Projeto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/devdenisviana/burguerheaven.git
+   ```
+2. Acesse a pasta do projeto:
+   ```bash
+   cd projeto
+   ```
+3. Instale as dependências:
+   ```bash
+   pnpm install
+   ```
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   pnpm dev
+   ```
+5. Acesse o projeto no navegador em `http://localhost:3000`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 📸 Imagens Utilizadas
+
+As imagens do projeto devem estar na pasta `public/images/`, incluindo:
+
+- `Burgers.png`
+- `fritas.png`
+- `3burguers.png`
+- `balcao.png`
+
+## 📝 Considerações Finais
+
+Este projeto visa criar uma experiência envolvente para os clientes da hamburgueria, utilizando tecnologias modernas para um design responsivo e interativo. 🚀🍔
